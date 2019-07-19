@@ -548,7 +548,7 @@ function validateContact() {
         To: 'hector.pichardo@ideasg.com',
         From: contact_email_address.value,
         Subject: contact_phone.value,
-        Body: contact_phone.value.concat(' ,', contact_mensaje.value, ' ,', contact_mensaje.value),
+        Body: contact_phone.value.concat(' ,', contact_name.value, ' ,', contact_mensaje.value),
 
     }).then(
         message => alert(message)
