@@ -152,9 +152,9 @@
             '<div id="siteNotice">' +
             '</div>' +
             '<h5 id="firstHeading" class="firstHeading">Envato</h5>' +
-            '<div id="bodyContent">King Street, Melbourne, Victoria, Australia' +
-            '<p>Tel: +912 123456789,' +
-            '<br>Fax: +912 123456789 ' +
+            '<div id="bodyContent">Viveros de Coyoacán 64, Viv. de la Loma, Tlalnepantla, Edo. de Méx, C.P. 54080' +
+            '<p>Tel: +(55)5206 2240,' +
+            '<br>Fax: +(55)5206 2240 ' +
             ' </p>' +
             '</div>' +
             '</div>';
