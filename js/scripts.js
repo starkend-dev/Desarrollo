@@ -542,32 +542,16 @@ function validateContact() {
     }
 
     Email.send({
-        // SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-        // SecureToken: " 629c6b07-1f86-44d1-a42e-ece93ca0268a",
+
         SecureToken: "0fc37eca-e045-4dca-b172-2a753b3288d8",
         To: 'hector.pichardo@ideasg.com',
-        From: "hectorpichardoe@outlook.com",
-        Subject: "This is the subject",
-        Body: "And this is the body",
-        // Attachments : [
-        // {
-        // 	name : "smtpjs.png",
-        // 	path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
-        // }]
+        From: document.getElementById("contact_email").value,
+        Subject: document.getElementById("contact_phone").value,
+        Body: document.getElementById("message").value,
+
     }).then(
         message => alert(message)
     );
 
-    // Email.send({
-    //     Host: "smtp.gmail.com",
-    //     Username: "Hector Rodrigo Pichardo Encizo",
-    //     Password: "Maclovia2019",
-    //     To: 'hector.pichardo@ideasg.com',
-    //     From: "hectorpichardoe@outlook.com",
-    //     Subject: "Comunicado uno",
-    //     Body: "Contenido del correo de Hector"
-    // }).then(
-    //     message => alert(message)
-    // );
 
 }
