@@ -499,6 +499,7 @@ function validateContact() {
     var contact_name = document.getElementById("contact_name");
     var contact_email_address = document.getElementById("contact_email");
     var contact_phone = document.getElementById("contact_phone");
+    var contact_mensaje = document.getElementById("message");
 
     if (contact_name.value == "") {
         errors += 'Please provide your name.';
@@ -545,9 +546,9 @@ function validateContact() {
 
         SecureToken: "0fc37eca-e045-4dca-b172-2a753b3288d8",
         To: 'hector.pichardo@ideasg.com',
-        From: document.getElementById("contact_email").value,
-        Subject: document.getElementById("contact_phone").value,
-        Body: document.getElementById("message").value,
+        From: contact_email_address.value,
+        Subject: contact_phone.value,
+        Body: contact_phone.value.concat(' ,', contact_mensaje.value, ' ,', contact_mensaje.value),
 
     }).then(
         message => alert(message)
