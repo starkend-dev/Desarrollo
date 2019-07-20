@@ -551,8 +551,13 @@ function validateContact() {
         Body: contact_phone.value.concat(' ,', contact_name.value, ' ,', contact_mensaje.value),
 
     }).then(
-        message => alert(message)
+        // message => alert(message)
     );
 
+    contact_name.value = "";
+    contact_email_address.value = "";
+    contact_phone.value = "";
+    contact_mensaje.value = "";
+    alert("Lo contactaremos en breve.");
 
 }
