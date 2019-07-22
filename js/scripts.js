@@ -502,13 +502,13 @@ function validateContact() {
     var contact_mensaje = document.getElementById("message");
 
     if (contact_name.value == "") {
-        errors += 'Please provide your name.';
+        errors += 'El campo nombre es necesario.';
     } else if (contact_email_address.value == "") {
-        errors += 'Please provide an email address.';
+        errors += 'El campo email es necesario.';
     } else if (checkcontact(contact_email_address.value) == false) {
-        errors += 'Please provide a valid email address.';
+        errors += 'El correo electrónico no es valido.';
     } else if (contact_phone.value == "") {
-        errors += 'Please provide a Phone No.';
+        errors += 'El campo teléfono es necesario.';
     }
 
 
@@ -558,6 +558,7 @@ function validateContact() {
     contact_email_address.value = "";
     contact_phone.value = "";
     contact_mensaje.value = "";
+    document.getElementById("error").style.display = "none";
     alert("Lo contactaremos en breve.");
 
 }
