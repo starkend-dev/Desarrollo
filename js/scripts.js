@@ -545,7 +545,7 @@ function validateContact() {
     Email.send({
 
         SecureToken: "0fc37eca-e045-4dca-b172-2a753b3288d8",
-        To: 'hector.pichardo@ideasg.com',
+        To: 'info@starkend.com',
         From: contact_email_address.value,
         Subject: contact_phone.value,
         Body: contact_phone.value.concat(' ,', contact_name.value, ' ,', contact_mensaje.value),
