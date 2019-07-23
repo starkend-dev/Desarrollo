@@ -501,6 +501,11 @@ function validateContact() {
     var contact_phone = document.getElementById("contact_phone");
     var contact_mensaje = document.getElementById("message");
 
+    var contenido_email = '<p>Cliente: ' + contact_name.value + '</p>' +
+        '<p>Email: ' + contact_email.value + '</p>' +
+        '<p>Teléfono: ' + contact_phone.value + '</p>' +
+        '<p>Mensaje: ' + contact_mensaje.value + '</p>';
+
     if (contact_name.value == "") {
         errors += 'El campo nombre es necesario.';
     } else if (contact_email_address.value == "") {
@@ -547,8 +552,9 @@ function validateContact() {
         SecureToken: "0fc37eca-e045-4dca-b172-2a753b3288d8",
         To: 'info@starkend.com',
         From: contact_email_address.value,
-        Subject: contact_phone.value,
-        Body: contact_phone.value.concat(' ,', contact_name.value, ' ,', contact_mensaje.value),
+        Subject: contact_name.value,
+        Body: contenido_email,
+        // Body: contact_phone.value.concat(' ,', contact_name.value, ' ,', contact_mensaje.value),
 
     }).then(
         // message => alert(message)
