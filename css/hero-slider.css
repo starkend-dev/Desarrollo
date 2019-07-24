@@ -181,14 +181,16 @@ Slider
 @media only screen and (min-width: 768px) {
     .cd-hero-slider {
         /* height: 500px; */
-        height: 330px;
+        /* height: 330px; */
+        height: 230px;
     }
 }
 
 @media only screen and (min-width: 1170px) {
     .cd-hero-slider {
         /* height: 680px; */
-        height: 430px;
+        /* height: 430px; */
+        height: 330px;
     }
 }
 
@@ -234,7 +236,8 @@ Single slide style
     left: 0;
     top: 0;
     /* this padding is used to align the text */
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    padding-top: 50px;
     /* Force Hardware Acceleration in WebKit */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -345,8 +348,8 @@ Single slide style
 @media only screen and (min-width: 768px) {
     .cd-hero-slider .cd-full-width,
     .cd-hero-slider .cd-half-width {
-        padding-top: 150px;
-        /* padding-top: 100px; */
+        /* padding-top: 150px; */
+        padding-top: 50px;
     }
     .cd-hero-slider .cd-bg-video-wrapper {
         display: block;
@@ -377,11 +380,12 @@ Single slide style
     .cd-hero-slider .cd-full-width,
     .cd-hero-slider .cd-half-width {
         /* padding-top: 220px; */
-        padding-top: 150px;
+        padding-top: 50px;
     }
     .header-transparent .cd-hero-slider .cd-full-width,
     .header-transparent .cd-hero-slider .cd-half-width {
         padding-top: 300px;
+        /* padding-top: 10px; */
     }
     .cd-hero-slider h2,
     .cd-hero-slider p {

@@ -888,6 +888,7 @@ HEADER
     padding: 0 20px;
     position: relative;
     height: 49px;
+    /* height: 40px; */
 }
 
 #header .top-bar:before {
@@ -909,6 +910,7 @@ HEADER
     top: -33px;
     width: 35px;
     height: 79px;
+    /* height: 50px; */
     content: "";
     background: #323946;
     -ms-transform: rotate(40deg);
@@ -936,6 +938,7 @@ HEADER
     padding: 9px 20px;
     margin: 0 0 0 -20px;
     font-weight: 300;
+    /* font-weight: 100; */
     position: relative;
 }
 
@@ -945,8 +948,10 @@ HEADER
 
 #header .top-bar ul li {
     float: left;
+    /* float: right; */
     list-style: none;
     font-size: 14px;
+    /* font-size: 16px; */
     margin: 15px 34px 14px;
     position: relative;
 }
